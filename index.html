@@ -729,15 +729,10 @@
 
 const firebaseConfig = {
   apiKey: "AIzaSyDbdYHPXELKsd0RJBJ7nSH4BUfI6zuDEFQ",
-
   authDomain: "akshit-64f92.firebaseapp.com",
-  
   projectId: "akshit-64f92",
-  
   storageBucket: "akshit-64f92.firebasestorage.app",
-  
   messagingSenderId: "165544316361",
-  
   appId: "1:165544316361:web:0567f53ca7f66690ca2c18"
 
 };
@@ -745,11 +740,8 @@ let firebaseReady = false, auth = null, googleProvider = null, currentUser = nul
 
 try {
   firebase.initializeApp(firebaseConfig);
-  
   auth = firebase.auth();
-  
   googleProvider = new firebase.auth.GoogleAuthProvider();
-  
   firebaseReady = true;
 } catch(e){
   console.warn("Firebase:", e);
